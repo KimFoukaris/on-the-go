@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchBeneficiaries } from './actions/beneficiaryActions'
-import BeneficiariesList from '../src/BeneficiariesList'
+import BeneficiariesList from './components/BeneficiariesList'
 
 class Beneficiaries extends Component {
 

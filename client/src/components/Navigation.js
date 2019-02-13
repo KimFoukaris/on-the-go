@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as Logo } from '../images/logo.svg';
 
 class Navigation extends Component {
   render() {
