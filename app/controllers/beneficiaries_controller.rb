@@ -1,7 +1,7 @@
 class BeneficiariesController < ApplicationController
   
     def index
-        @beneficiaries = Beneficiary.all
+        @beneficiaries = Beneficiary.all.order("first_name")
         render json: @beneficiaries
     end
 
