@@ -1,7 +1,7 @@
 class NotesController < ApplicationController
 
     def index
-       @notes = Note.all.order("intake_date DESC")
+       @notes = Note.all.order("date DESC")
        render json: @notes 
     end
 
