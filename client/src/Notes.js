@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchNotes } from './actions/noteActions'
+import { fetchBeneficiaries } from './actions/beneficiaryActions'
 import NotesList from './components/NotesList'
 
 class Notes extends Component {

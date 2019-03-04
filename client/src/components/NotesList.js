@@ -8,7 +8,7 @@ class NotesList extends Component {
     <div key={index}>
       <Panel bsStyle="danger">
         <Panel.Heading>
-          <Panel.Title>{note.beneficiary_id} </Panel.Title>
+          <Panel.Title>{note.beneficiary.first_name} </Panel.Title>
         </Panel.Heading>
         <Panel.Body>
         {note.date} {note.content}

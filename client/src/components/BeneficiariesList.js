@@ -8,12 +8,11 @@ class BeneficiariesList extends Component {
     <div key={index}>
       <Panel bsStyle="danger">
         <Panel.Heading>
-          <Panel.Title>{beneficiary.first_name} </Panel.Title>
+          <Panel.Title>
+            {beneficiary.first_name}  Gender: {beneficiary.gender}  Nationality: {beneficiary.nationality}
+            <Button className="pull-right">Add Note</Button>
+          </Panel.Title>
         </Panel.Heading>
-        <Panel.Body>
-        ({beneficiary.gender}) {beneficiary.nationality}
-          <Button className="pull-right">Add Note</Button>
-        </Panel.Body>
       </Panel>
     </div>
     )

@@ -2,7 +2,7 @@ class NotesController < ApplicationController
 
     def index
        @notes = Note.all.order("date DESC")
-       render json: @notes 
+       render json: @notes, :include => {:beneficiary => {:only => :first_name}} 
     end
 
     def create
