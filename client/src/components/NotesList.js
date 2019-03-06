@@ -6,12 +6,9 @@ class NotesList extends Component {
   renderNotesList = () => {
     return this.props.notes.map((note, index) => 
     <div key={index}>
-      <Panel bsStyle="danger">
-        <Panel.Heading>
-          <Panel.Title>{note.beneficiary.first_name} </Panel.Title>
-        </Panel.Heading>
+      <Panel>
         <Panel.Body>
-        {note.date} {note.content}
+          {note.beneficiary.first_name}: {note.date} {note.content}
           <Button className="pull-right">Add Note</Button>
         </Panel.Body>
       </Panel>

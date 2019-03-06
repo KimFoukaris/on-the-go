@@ -2,7 +2,7 @@ class BeneficiariesController < ApplicationController
   
     def index
         @beneficiaries = Beneficiary.all.order("first_name")
-        render json: @beneficiaries
+        render json: @beneficiaries, :include => {:notes => {:only => [:date, :content]}}
     end
 
     def create
